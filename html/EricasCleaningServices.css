@@ -80,9 +80,8 @@ p {
   display: flex;
   position: relative;
   width: 100%;
-  height: 500px;
-
-background:#ffffff;
+  height: 700px;
+  margin-top: 100px;
 
 }
 /*--------text apresentation-----*/
@@ -103,7 +102,8 @@ background:#ffffff;
 }
 /*-------form de cadastro----*/
 .container{
-  
+  width: 100%;
+  height: 100%;
   max-width: 800px;
   background: linear-gradient(0deg, rgba(96, 204, 250, 0.92), rgba(96, 204, 250, 0.92)),
   linear-gradient(0deg, #FFFFFF, #FFFFFF);
@@ -189,6 +189,7 @@ form .form-row .textarea{
 }
 .submit-btn .input-data{
   overflow: hidden;
+  border-radius: 10px;
   height: 45px!important;
   width: 25%!important;
 }
@@ -234,7 +235,7 @@ form .form-row .textarea{
 }
 /*------About Us------*/
 .about{ 
-  width: 100%;
+  width: 90%;
   height: 500px;
   margin-top: 100px;
   margin-left: 10px;
@@ -250,7 +251,6 @@ form .form-row .textarea{
   -webkit-text-fill-color: transparent;
 }
 .About-img-us{
-  background-color: #3498db;
   width: 500px;
   height: 500px;
 }
@@ -276,27 +276,119 @@ form .form-row .textarea{
   width: 100%;
   height: 500px;
   margin-top: 50px;
-  margin-left:20px;
+  
 }
-.out-services{
-  width: 100%;
-  text-align: center;
-}
-.container-img{
+.wrapper {
   display: grid;
-  width: 100%;
-  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-left: 20px;
 }
-.imgServices{
+.windows-cleaning {
+  display: flex;
+  width: 400px;
+  grid-column: 1 ;
+  grid-row: 1;
+}
+.windows-cleaning img{
   width: 250px;
   height: 250px;
-  margin-left: 10px;
 }
-.imgServices img{
+.deep-cleaning {
+  display: flex;
+  width: 500px;
+  grid-column: 3;
+  grid-row: 2;
+}
+.deep-cleaning img{
+  width: 300px;
+}
+.standard-cleaning {
+  display: flex;
+  width: 400px;
+  grid-column: 1;
+  grid-row: 3;
+}
+.standard-cleaning img{
+  width: 250px;
+  height: 250px;
+}
+.move-out-cleaning {
+  display: flex;
+  width: 500px;
+  grid-column:3;
+  grid-row:4 ; 
+}
+.move-out-cleaning img{
+  width: 250px;
+  height: 250px;
+}
+#bodyCard{
+  text-align: center;
+  margin-top: 50px;
+  justify-items: center;
+  width: 200px;
+  height: 90px;
+}
+#bodyCard p {
+  font-size: 20px;
+}
+.footer{
   width: 100%;
-  height: 100%;
+  height: 500px;
+  margin-top: 550px;
+  background-color: #56d8e4;
 }
-.imgServices p{
-  width: 220px;
-  font-size: 24px;
+.footerInfo{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.textfooter{
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.textfooter h1{
+  text-align: center;
+}
+.textfooter span{
+  color: #3498db;
+}
+.footerAbout{
+  position: relative;
+  width: 250px;
+  height: 100px;
+  justify-items: center;
+  margin-top: 100px;
+}
+.footerAbout h1 {
+  display: flex;
+  font-size: 20px;
+  width: 200px;
+  justify-content: center;
+  
+
+}
+.footerAbout p {
+  font-size: 14px;
+  text-align: center;
+}
+.JobUs{
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.JobUs h1{
+  display: flex;
+  font-size: 20px;
+  width: 200px;
+  justify-content: center;
+}
+.JobUs p{
+  font-size: 14px;
+  text-align: center;
 }
